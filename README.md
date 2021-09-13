@@ -6,7 +6,7 @@ I made the neopixel on the Metro Express board fade from a blue to a bright pink
 
 Here's the code:
 
-```
+```python
 import time
 import board
 import neopixel
