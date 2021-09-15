@@ -43,7 +43,10 @@ while True:
 ```
 
 ### Evidence
-Pictures / Gifs of your work should go here.  You need to communicate what your thing does.
+
+
+https://user-images.githubusercontent.com/63983735/133448966-b5306d66-d752-42c3-9a0a-a3cd8921a596.mp4
+
 
 ### Wiring
 Make an account with your google ID at [tinkercad.com](https://www.tinkercad.com/learn/circuits), and use "TinkerCad Circuits to make a wiring diagram."  It's really easy!  
