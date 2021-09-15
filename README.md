@@ -13,6 +13,9 @@
 ### Description & Code
 I made the neopixel on the Metro Express board fade from a blue to a bright pink, and then loop back around to blue. I did this by using variables x, y, and z as the RGB values and adding to them every time it loops around, much like a counter, so that thje color changes everytime and works its way up. Once it clocks out on 255, it resets back to 20.
 
+
+
+
 Here's the code:
 
 ```python
@@ -66,6 +69,8 @@ Code goes here
 ```
 
 ### Evidence
+
+https://user-images.githubusercontent.com/63983735/133453060-47586578-9ce4-4183-98fa-976e8902bab3.mp4
 
 ### Wiring
 
