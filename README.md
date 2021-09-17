@@ -63,10 +63,23 @@ It was a but difficult at first to learn to code with a new language and softwar
 
 ### Description & Code
 
-```python
-Code goes here
+Today(or a couple days ago), I was tasked with making a servo move. I did that. I also used capacitive touch to make the servo sweep back ad forth. Using a for loop is also pretty helpful for that. The main part of the code is below, but I also put a link to the full code if you want to take a look at that.
 
+```python
+touch_pad = board.A4
+touch1_pad = board.A4
+
+while True:
+    for angle in range(0, 180, 5):  # 0 - 180 degrees, 5 degrees at a time.
+        my_servo.angle = angle
+        time.sleep(0.05)
+        print(angle)
+    for angle in range(180, 0, -5):  # 180 - 0 degrees, 5 degrees at a time.
+        my_servo.angle = angle
+        time.sleep(0.05)
+        print(angle)
 ```
+[Click Here for the Full Code](https://github.com/shrey45/CircuitPython/blob/main/Code/CircuitPython_Servo.py)
 
 ### Evidence
 
