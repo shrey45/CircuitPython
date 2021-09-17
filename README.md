@@ -52,6 +52,7 @@ https://user-images.githubusercontent.com/63983735/133448966-b5306d66-d752-42c3-
 
 
 ### Wiring
+There was no wiring necassary for this assignment, the neopixel was built into the board.
 Make an account with your google ID at [tinkercad.com](https://www.tinkercad.com/learn/circuits), and use "TinkerCad Circuits to make a wiring diagram."  It's really easy!  
 Then post an image here.   [here's a quick tutorial for all markdown code, like making links](https://guides.github.com/features/mastering-markdown/)
 
