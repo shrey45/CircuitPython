@@ -57,8 +57,7 @@ Make an account with your google ID at [tinkercad.com](https://www.tinkercad.com
 Then post an image here.   [here's a quick tutorial for all markdown code, like making links](https://guides.github.com/features/mastering-markdown/)
 
 ### Reflection
-What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience?  Your ultimate goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person.
-
+It was a but difficult at first to learn to code with a new language and software, so it took a bit of tinkering and googling to figure out how to work this thing. It seems a little bit easier know, but I'm just starting so it'll take a bit more time to feel confident like how I am with Arduino.
 
 ## CircuitPython_Servo
 
