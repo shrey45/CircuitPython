@@ -1,24 +1,26 @@
+"""CircuitPython Essentials Servo standard servo example"""
 import time
 import board
-import neopixel
+import pwmio
+import servo
+import touchio
 
-dot = neopixel.NeoPixel(board.NEOPIXEL, 1)
-x = 50
-y = 50
-z = 50
+# create a PWMOut object on Pin A2.
+pwm = pwmio.PWMOut(board.A2, duty_cycle=2 ** 15, frequency=50)
+
+# Create a servo object, my_servo.
+my_servo = servo.Servo(pwm)
+
+touch_pad = board.A4
+touch1_pad = board.A5
+
+touch = touchio.TouchIn(touch_pad)
+touch1 = touchio.TouchIn(touch1_pad)
 
 while True:
-
-dot.fill((x, y, z,))
-time.sleep(.5)
-x = x+5
-if x==255:
-    x = 10
-
-y = y+1
-if y==255:
-    y = 10
-
-z = z*2
-if z>255:
-    z = 10
+    if touch.value:
+        my_servo.angle = 180
+        time.sleep(0.05)
+    if touch1.value:
+        my_servo.angle = 0
+        time.sleep(0.05)
