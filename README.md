@@ -76,7 +76,7 @@ while True:
             angle = 180
         print(angle)
 ```
-[Click Here for the Full Code](https://github.com/shrey45/CircuitPython/blob/main/Code/CircuitPython_Servo.py)
+[Click Here for the Full Code](https://github.com/shrey45/CircuitPython/blob/main/Code/Servo.py)
 
 ### Evidence
 
