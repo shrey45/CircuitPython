@@ -84,6 +84,8 @@ https://user-images.githubusercontent.com/63983735/133453060-47586578-9ce4-4183-
 
 ### Wiring
 
+![](https://github.com/hheisig51/VigilantWaddle/blob/main/Diagrams/Renders/CircuitPython_Servo.png?raw=true)
+
 ### Reflection
 
 
