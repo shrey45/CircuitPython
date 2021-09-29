@@ -12,7 +12,7 @@ pwm = pwmio.PWMOut(board.A2, duty_cycle=2 ** 15, frequency=50)
 my_servo = servo.Servo(pwm)
 
 touch = touchio.TouchIn(board.A0)
-tauch = touchio.TouchIn(board.A4)
+touch1 = touchio.TouchIn(board.A4)
 
 angle = 0
 while True:
@@ -24,8 +24,8 @@ while True:
         if angle >= 180:
             angle = 180
         print(angle)
-    if tauch.value:
-        print("Tauched A4")
+    if touch1.value:
+        print("Touched A4")
         my_servo.angle = angle
         if angle > 0:
             angle = angle - 5
