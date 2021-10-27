@@ -4,7 +4,7 @@
 * [Table of Contents](#TableOfContents)
 * [Hello_CircuitPython](#Hello_CircuitPython)
 * [CircuitPython_Servo](#CircuitPython_Servo)
-* [CircuitPython_LCD](#CircuitPython_LCD)
+* [CircuitPython_Ultrasonic](#CircuitPython_Ultrasonic)
 * [NextAssignmentGoesHere](#NextAssignment)
 ---
 
@@ -91,7 +91,7 @@ https://user-images.githubusercontent.com/63983735/133453060-47586578-9ce4-4183-
 
 
 
-## CircuitPython_LCD
+## CircuitPython_Ultrasonic
 
 ### Description & Code
 
