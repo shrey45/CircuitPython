@@ -5,7 +5,7 @@
 * [Hello_CircuitPython](#Hello_CircuitPython)
 * [CircuitPython_Servo](#CircuitPython_Servo)
 * [CircuitPython_Ultrasonic](#CircuitPython_Ultrasonic)
-* [NextAssignmentGoesHere](#NextAssignment)
+* [CircuitPython LCD](#CircuitPython_LCD)
 ---
 
 ## Hello_CircuitPython
@@ -84,7 +84,7 @@ https://user-images.githubusercontent.com/63983735/133453060-47586578-9ce4-4183-
 
 ### Wiring
 
-![](https://github.com/hheisig51/VigilantWaddle/blob/main/Diagrams/Renders/CircuitPython_Servo.png?raw=true)
+<img src="https://github.com/hheisig51/VigilantWaddle/blob/main/Diagrams/Renders/CircuitPython_Servo.png?raw=true" width="400">
 
 ### Reflection
 
@@ -110,17 +110,65 @@ Code goes here
 
 
 
-## NextAssignment
+## CircuitPython_LCD
 
 ### Description & Code
 
 ```python
-Code goes here
+import board
+import time
+import touchio
+from lcd.lcd import LCD
+from lcd.i2c_pcf8574_interface import I2CPCF8574Interface
+
+counter = 0
+Switchdir = 1 # This switches the direction counter is moving
+SwitchA = 0
+SwitchB = 0
+
+# get and i2c object
+i2c = board.I2C()
+
+# some LCDs are 0x3f... some are 0x27.
+lcd = LCD(I2CPCF8574Interface(i2c, 0x3f), num_rows=2, num_cols=16)
+
+touch = touchio.TouchIn(board.A0)
+touch1 = touchio.TouchIn(board.A4)
+
+while True:
+    if touch.value and SwitchB == 0:
+        print("Touched A0")
+        Switchdir = -Switchdir
+    SwitchB = touch.value
+    
+    if Switchdir <= 0 and touch1.value and SwitchA == 0:
+        print("Touched A4")
+        lcd.set_cursor_pos(0, 0)
+        counter += Switchdir
+        lcd.print(str(counter))
+        lcd.print(" ")
+    SwitchA = touch1.value
+    
+    if Switchdir >= 0 and touch1.value and SwitchA == 0:
+        print("Touched A4")
+        lcd.clear()
+        counter += Switchdir
+        lcd.set_cursor_pos(0, 0)
+        lcd.print(str(counter))
+        lcd.print(" ")
+    SwitchA = touch1.value
+
 
 ```
 
 ### Evidence
 
+<img src="https://github.com/inovotn04/CircuitPython/raw/main/Images/LCDGif.gif?raw=true" width="400">
+
+Image Credit [Ian Novotne](https://github.com/inovotn04/CircuitPython/raw/main/Images/LCDGif.gif?raw=true)
+
 ### Wiring
+
+<img src="https://github.com/jmuss07/Circuit-Python/raw/main/Images/LCD.PNG?raw=true" width="400">
 
 ### Reflection
