@@ -114,6 +114,8 @@ Code goes here
 
 ### Description & Code
 
+In this assignment, we use capacitive touch, as used in the [Servo assignment](#CircuitPython_Servo), to printnumbers on an LCD screen. When you press one wire, the direction of counting changes from up to down, and vice versa. The other wire, when pressed, will move the number up by 1 every time it is pressed. The thing is though, every time you press, it will only register one touch. So, if you press and hold, it only counts one time.
+
 ```python
 import board
 import time
@@ -172,3 +174,5 @@ Image Credit [Ian Novotne](https://github.com/inovotn04/CircuitPython/raw/main/I
 <img src="https://github.com/jmuss07/Circuit-Python/raw/main/Images/LCD.PNG?raw=true" width="400">
 
 ### Reflection
+
+This was an interesting LCD assignment. The initial part to just get it to count up and down when you tocuhed it was reay easy, just a few basic command lines. When we got to the spicy part it was a bit more difficut to integrate in some booleans. What really didn't help my case was that I read the assignment wrong, and I though we had to use one wire to go up and the other to go down. SO i spent a lot of time trying to make the wrong code, which I thought was right, and when I did do the right code, I thought it was wrong. That was a mouthful. MORAL OF THE STORY. READ THE ASSIGNMENT PROPERLY...
