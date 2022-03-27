@@ -173,6 +173,8 @@ Image Credit [Ian Novotne](https://github.com/inovotn04/CircuitPython/raw/main/I
 
 <img src="https://github.com/jmuss07/Circuit-Python/raw/main/Images/LCD.PNG?raw=true" width="400">
 
+Image Credit [Josie Muss](https://github.com/jmuss07/Circuit-Python)
+
 ### Reflection
 
 This was an interesting LCD assignment. The initial part to just get it to count up and down when you tocuhed it was reay easy, just a few basic command lines. When we got to the spicy part it was a bit more difficut to integrate in some booleans. What really didn't help my case was that I read the assignment wrong, and I though we had to use one wire to go up and the other to go down. SO i spent a lot of time trying to make the wrong code, which I thought was right, and when I did do the right code, I thought it was wrong. That was a mouthful. MORAL OF THE STORY. READ THE ASSIGNMENT PROPERLY...
