@@ -6,6 +6,7 @@
 * [CircuitPython_Servo](#CircuitPython_Servo)
 * [CircuitPython_Ultrasonic](#CircuitPython_Ultrasonic)
 * [CircuitPython LCD](#CircuitPython_LCD)
+* [Photointerrupters](#Photointerrupters)
 ---
 
 ## Hello_CircuitPython
