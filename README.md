@@ -205,15 +205,15 @@ intertupter_pin.pull = digitalio.Pull.UP
 
 counter = 0
 photo = False
-state = False
+photostate = False
 max = 4
 
 while True:
     photo = intertupter_pin.value
-    if photo and not state:
+    if photo and not photostate:
         counter += 1
         print(str(counter))
-    state = photo
+    photostate = photo
     remaining = max - time.monotonic()
     if remaining <= 0:
         print(str(counter))
