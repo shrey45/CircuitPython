@@ -119,7 +119,7 @@ Source:
 
 
 ### Reflection
-I had a lot of problems with this one. There was random bugs that would fix themselves and it was really hard to get the distance function to work with the colors. If not for the hint on the canvas page I would have gotton stuck for a long time. Even after that I still had some problems but with the help of some classmates I got it.
+This one was slightly difficult, so it took some help from other to get it down. I was having trouble with the colors, and I had to look at the hint for me to get the finishing touches, but I did try to do most of it on my own!
 
 
 
