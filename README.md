@@ -193,3 +193,49 @@ Image Credit [Josie Muss](https://github.com/jmuss07/Circuit-Python)
 ### Reflection
 
 This was an interesting LCD assignment. The initial part to just get it to count up and down when you tocuhed it was reay easy, just a few basic command lines. When we got to the spicy part it was a bit more difficut to integrate in some booleans. What really didn't help my case was that I read the assignment wrong, and I though we had to use one wire to go up and the other to go down. SO i spent a lot of time trying to make the wrong code, which I thought was right, and when I did do the right code, I thought it was wrong. That was a mouthful. MORAL OF THE STORY. READ THE ASSIGNMENT PROPERLY...
+
+## Photointerrupters
+
+### Description & Code
+
+```python
+intertupter_pin = digitalio.DigitalInOut(board.D8)
+intertupter_pin.switch_to_input
+intertupter_pin.pull = digitalio.Pull.UP
+
+counter = 0
+photo = False
+state = False
+max = 4
+
+while True:
+    photo = intertupter_pin.value
+    if photo and not state:
+        counter += 1
+        print(str(counter))
+    state = photo
+    remaining = max - time.monotonic()
+    if remaining <= 0:
+        print(str(counter))
+        max = time.monotonic() + 4
+        counter = 0
+```
+
+### Evidence
+
+<img src="https://github.com/jmuss07/Circuit-Python/blob/main/Images/Photointerrupter_GIF.gif?raw=true" width="400">
+
+<img src="https://github.com/jmuss07/Circuit-Python/blob/main/Images/Photointerrupter_Code_GIF.gif?raw=true" width="400">
+
+Image Credit goes to [Josie Muss](https://github.com/jmuss07/Circuit-Python)
+
+
+### Wiring
+<img src="https://github.com/jmuss07/Circuit-Python/raw/main/Images/Photointerrupter.PNG?raw=true" width="400">
+
+Image Credit goes to [Josie Muss](https://github.com/jmuss07/Circuit-Python)
+
+
+### Reflection
+This one was difficult because I've never used a photointerupter before, so I looked at other githubs and online forms to understand more. The basis code was copied but then i gad to edit it to get it to work with the numbers. Photointerrupters are really cool though and I honestly rally want to use one in my next project because the possibilties are endless!
+
