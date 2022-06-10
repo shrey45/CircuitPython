@@ -91,20 +91,37 @@ https://user-images.githubusercontent.com/63983735/133453060-47586578-9ce4-4183-
 
 
 
-## CircuitPython_Ultrasonic
+## CircuitPython_UtraSonicSensor
 
 ### Description & Code
 
 ```python
-Code goes here
-
+ if distance >= 5 and distance < 20:
+            red = int(simpleio.map_range(distance, 5, 20, 255, 0))
+            blue = int(simpleio.map_range(distance, 5, 20, 0, 255))
+            green = int(simpleio.map_range(distance, 5, 20, 0, 0))
+        if distance >= 20 and distance < 35:
+            red = int(simpleio.map_range(distance, 20, 35, 0, 0))
+            blue = int(simpleio.map_range(distance, 20, 35, 255, 0))
+            green = int(simpleio.map_range(distance, 20, 35, 0, 255))
+        print(red,green,blue)
+        dot.fill((red, green, blue))
 ```
 
 ### Evidence
+<img src="https://github.com/inovotn04/CircuitPython/raw/main/Images/DistanceSensorEvidence.gif?raw=true" width="300">
+
+Source:
+[Ian Novotne](https://github.com/inovotn04/CircuitPython/blob/main/README.md)
 
 ### Wiring
+<img src="https://github.com/Jhouse53/CircuitPython/blob/main/GIF%20and%20Images/UltraSonicSensor%20wiring.PNG?raw=true" width="400">
+
+Source:
+[Benton House](https://github.com/Jhouse53)
 
 ### Reflection
+I had a lot of problems with this one. There was random bugs that would fix themselves and it was really hard to get the distance function to work with the colors. If not for the hint on the canvas page I would have gotton stuck for a long time. Even after that I still had some problems but with the help of some classmates I got it.
 
 
 
