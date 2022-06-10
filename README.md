@@ -91,7 +91,7 @@ https://user-images.githubusercontent.com/63983735/133453060-47586578-9ce4-4183-
 
 
 
-## CircuitPython_UtraSonicSensor
+## CircuitPython_Ultrasonic
 
 ### Description & Code
 
